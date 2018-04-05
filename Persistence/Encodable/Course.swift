@@ -39,13 +39,10 @@ extension WebsiteDescription: CustomDebugStringConvertible {
 }
 
 /*
- get test url
+ test url
  https://api.letsbuildthatapp.com/jsondecodable/course
  https://api.letsbuildthatapp.com/jsondecodable/courses
  https://api.letsbuildthatapp.com/jsondecodable/website_description
- 
- set test url
- https://jsonplaceholder.typicode.com/posts
  */
 class CourseLoader {
     @discardableResult
