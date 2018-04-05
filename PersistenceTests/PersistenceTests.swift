@@ -24,6 +24,15 @@ class PersistenceTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        print("\n\n")
+        testCodableClass0()
+        print()
+        testCodableClass1()
+        print()
+        testCodableStruct0()
+        print()
+        testCodableStruct1()
+        print("\n\n")
     }
     
     func testPerformanceExample() {

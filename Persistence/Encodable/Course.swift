@@ -11,7 +11,7 @@ import Foundation
 // property 이름과 json data 의 key 는 대소문자가 같아야 한다.
 // "https://api.letsbuildthatapp.com/jsondecodable/course"
 // "https://api.letsbuildthatapp.com/jsondecodable/courses"
-struct Course: Decodable, Encodable {
+struct Course: Codable {
     let id: Int
     let name: String
     let link: String
@@ -38,7 +38,15 @@ extension WebsiteDescription: CustomDebugStringConvertible {
     }
 }
 
-
+/*
+ get test url
+ https://api.letsbuildthatapp.com/jsondecodable/course
+ https://api.letsbuildthatapp.com/jsondecodable/courses
+ https://api.letsbuildthatapp.com/jsondecodable/website_description
+ 
+ set test url
+ https://jsonplaceholder.typicode.com/posts
+ */
 class CourseLoader {
     @discardableResult
     static func getCourseData() -> [Course] {
